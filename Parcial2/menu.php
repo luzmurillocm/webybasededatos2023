@@ -21,7 +21,7 @@
             <li><a class="dropdown-item" href="inicioo.php">inicio</a></li>
             <li><a class="dropdown-item" href="consultarAlumnos.php">consultar alumnos</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Registrar Alumnos</a></li>
+            <li><a class="dropdown-item" href="RegistrarAlumnos.php">Registrar Alumnos</a></li>
           </ul>
         </li>
         <li class="nav-item">
