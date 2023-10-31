@@ -10,13 +10,13 @@ $sexo = $_POST["sexo"];
 $sql = "INSERT INTO alumnos(nombre, numero_control, semestre, edad, turno, sexo)";
 $sql = "VALUES('".$nombre"', '".$numero_control."', ".$semestre.", ".$edad.", '".$turno."', ".$sexo.")";
 
-if($conexion->query($sql) == TRUE){
+if($conexionn->query($sql) == TRUE){
     header("location: consultarAlumnos.php");
-    $concexion->close();
+    $conexionn->close();
     exit;
 }else{
     echo "<h2>Ocurrio un error</h2> <p>Error: " .$sql . "<br>" . $conexionn-error . "</p>";
-    echo""
+    echo "<h3><a href='consultarAlumnos.php'>Registrar a alumnos</a></h3>";
 
 }
 
