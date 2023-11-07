@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-10-2023 a las 02:23:02
--- Versión del servidor: 10.1.39-MariaDB
--- Versión de PHP: 7.3.5
+-- Tiempo de generación: 07-11-2023 a las 02:36:28
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.1.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -36,15 +35,15 @@ CREATE TABLE `alumnos` (
   `edad` int(11) NOT NULL,
   `turno` varchar(10) NOT NULL,
   `sexo` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `alumnos`
 --
 
 INSERT INTO `alumnos` (`id`, `nombre`, `numero_control`, `semestre`, `edad`, `turno`, `sexo`) VALUES
-(1, 'Lara Moreno Alma Jimena', '21325061070363', 5, 17, 'Vespertino', 0),
-(2, 'Revilla Gaxiola Angel Eduardo', '21325067075465', 5, 17, 'Vespertino', 1),
+(1, 'Lara Moreno Alma Jimena', '21325061070363', 5, 17, 'Vespertino', 1),
+(2, 'Revilla Gaxiola Angel Eduardo', '21325067075465', 5, 17, 'Vespertino', 0),
 (3, 'Felix Aguilasocho Nicolas', '21322767070423', 5, 16, 'Vespertino', 0),
 (4, 'Guerrero Parra Kenia Patricia', '21326767070468', 5, 17, 'Vespertino', 1),
 (5, 'Lopez Chavira Brunette Sofia', '21325061094254', 5, 17, 'Vespertino', 1),
