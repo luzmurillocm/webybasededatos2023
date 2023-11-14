@@ -7,12 +7,12 @@
 
     $sql= "INSERT INTO materias(nombre, semestre, especialidad) VALUES ('".$nombre."',".$semestre.",'".$especialidad."')";
     if($conexion->query($sql) === TRUE){
-        header("Location: consultarMaterias.php");
+        header("Location: ConsultarMaterias.php");
         $conexion->close();
         exit;
     }else{
         echo "<h2>Ocurrió un error</h2> <p>Error: ".$sql . "<br>" . $conexion->error . "</p>";
-        echo "<h3><a href='RegistrarMaterias.php'>Regresar a materias</a></h3>";
+        echo "<h3><a href='RegistroMateria.php'>Regresar a materias</a></h3>";
     }
 
 

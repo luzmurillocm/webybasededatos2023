@@ -14,7 +14,7 @@
 
     $id = $_GET["id"];
     
-    $sql = "SELECT * FROM materias WHERE id=" .$id;
+    $sql = "SELECT * FROM materiass WHERE id=" .$id;
 
     $datos = $conexion->query($sql);
 
@@ -26,7 +26,7 @@
 <div class="container">
         <div class="row">
             <div class="col-12 card m-4">
-                <form action="actualizarMateria.php" method="POST">
+                <form action="GuardarMateria.php" method="POST">
                     <input type="hidden" name="id" value="<?php echo $materia["id"]; ?>">
                     <div class="form-group">
                         <label for="">Nombre: </label>
