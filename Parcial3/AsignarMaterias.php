@@ -22,9 +22,9 @@
         <div class="row">
             <div class="col-12 card p-4 m-2">
                 <h2>Asignar Materias a alumnos</h2><br>
-                <form action="">
+                <form action="GuardarAsignacion.php" method="POST">
                     <label for="">Alumno:</label>
-                    <select name="alumno" id="form-control">
+                    <select name="alumno" class="form-control">
                         <option value="">Selecciona a un alumno</option>
                             <?php 
                                 if($datos_alumnos->num_rows > 0) {
@@ -38,7 +38,7 @@
                         <h3>Seleccione las materias:</h3><hr>
                             <?php if($datos_materias->num_rows > 0) {
                                 while($registro = $datos_materias->fetch_assoc()){ ?>
-                                <p><input type="checkbox" name="materiass[]" value=""> <?php echo $registro["nombre"]; ?></p>
+                                <p><input type="checkbox" name="materiass[]" value="<?php echo $registro["id"]; ?>"> <?php echo $registro["nombre"]; ?></p>
                                 <?php } } ?>
                         
 

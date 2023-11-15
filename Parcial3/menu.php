@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2E4053;">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #a7201f;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">CETIS 107</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,18 +18,18 @@
             <li><a class="dropdown-item" href="consultarAlumnos.php">Consultar alumnos</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="RegistrarAlumno.php">Registar alumno</a></li>
-            <li><a class="dropdown-item" href="RegistroMateria.php">Materias</a></li>
+            <li><a class="dropdown-item" href="AsignarMaterias.php">Asignar Materias</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Materias
+           Materias
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="inicio.php">Inicio</a></li>
             <li><a class="dropdown-item" href="ConsultarMaterias.php">Consultar Materias</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="RegistroMateria.php">Registrar Materias</a></li>
+            <li><a class="dropdown-item" href="RegistrarMaterias.php">Registar Materias</a></li>
           </ul>
         </li>
       </ul>
